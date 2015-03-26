@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TankGame!</title>
+    
+    <link rel="stylesheet" href="game1.css">
+  </head>
+  <body>
+
+    <!-- ressource -->
+    <img id="blueDown1" src="img/blue/down1.png" />
+    <img id="blueDown2" src="img/blue/down2.png" />
+    <img id="blueLeft1" src="img/blue/left1.png" />
+    <img id="blueLeft2" src="img/blue/left2.png" />
+    <img id="blueRight1" src="img/blue/right1.png" />
+    <img id="blueRight2" src="img/blue/right2.png" />
+    <img id="blueShot1" src="img/blue/shot1.png" />
+    <img id="blueShot2" src="img/blue/shot2.png" />
+    <img id="blueShot3" src="img/blue/shot3.png" />
+    <img id="blueShot4" src="img/blue/shot4.png" />
+    <img id="blueUp1" src="img/blue/up1.png" />
+    <img id="blueUp2" src="img/blue/up2.png" />
+    
+    <img id="redDown1" src="img/red/down1.png" />
+    <img id="redDown2" src="img/red/down2.png" />
+    <img id="redLeft1" src="img/red/left1.png" />
+    <img id="redLeft2" src="img/red/left2.png" />
+    <img id="redRight1" src="img/red/right1.png" />
+    <img id="redRight2" src="img/red/right2.png" />
+    <img id="redShot1" src="img/red/shot1.png" />
+    <img id="redShot2" src="img/red/shot2.png" />
+    <img id="redShot3" src="img/red/shot3.png" />
+    <img id="redShot4" src="img/red/shot4.png" />
+    <img id="redUp1" src="img/red/up1.png" />
+    <img id="redUp2" src="img/red/up2.png" />
+    
+    <img id="yellowDown1" src="img/yellow/down1.png" />
+    <img id="yellowDown2" src="img/yellow/down2.png" />
+    <img id="yellowLeft1" src="img/yellow/left1.png" />
+    <img id="yellowLeft2" src="img/yellow/left2.png" />
+    <img id="yellowRight1" src="img/yellow/right1.png" />
+    <img id="yellowRight2" src="img/yellow/right2.png" />
+    <img id="yellowShot1" src="img/yellow/shot1.png" />
+    <img id="yellowShot2" src="img/yellow/shot2.png" />
+    <img id="yellowShot3" src="img/yellow/shot3.png" />
+    <img id="yellowShot4" src="img/yellow/shot4.png" />
+    <img id="yellowUp1" src="img/yellow/up1.png" />
+    <img id="yellowUp2" src="img/yellow/up2.png" />
+    
+    <img id="greenDown1" src="img/green/down1.png" />
+    <img id="greenDown2" src="img/green/down2.png" />
+    <img id="greenLeft1" src="img/green/left1.png" />
+    <img id="greenLeft2" src="img/green/left2.png" />
+    <img id="greenRight1" src="img/green/right1.png" />
+    <img id="greenRight2" src="img/green/right2.png" />
+    <img id="greenShot1" src="img/green/shot1.png" />
+    <img id="greenShot2" src="img/green/shot2.png" />
+    <img id="greenShot3" src="img/green/shot3.png" />
+    <img id="greenShot4" src="img/green/shot4.png" />
+    <img id="greenUp1" src="img/green/up1.png" />
+    <img id="greenUp2" src="img/green/up2.png" />
+    
+    
+    <img id="shoot" src="img/explotions/shot/shoot.png" />
+    
+    <img id="shootDown" src="img/explotions/shot/down.png" />
+    <img id="shootUp" src="img/explotions/shot/up.png" />
+    <img id="shootLeft" src="img/explotions/shot/left.png" />
+    <img id="shootRight" src="img/explotions/shot/right.png" />
+    <img id="key" src="img/key.png" />
+    
+    
+    <!-- ressource Map -->
+    <img id="W" src="img/tiles/brick1.png" />
+    <img id="w" src="img/tiles/metalBox.png" />
+    <img id="0" src="img/tiles/sand.png" />
+
+    <img id="b" src="img/tiles/woodenBox.png" />
+    <img id="B" src="img/tiles/box2.png" />
+    <img id="c" src="img/tiles/brick2.png" />
+    <img id="C" src="img/tiles/brick2Cracked.png" />
+    
+    
+    <img id="fire0" src="img/fire/fire1.png" />
+    <img id="fire1" src="img/fire/fire2.png" />
+    <img id="fire2" src="img/fire/fire3.png" />
+    <img id="fire3" src="img/fire/fire4.png" />
+    <img id="fire4" src="img/fire/fire5.png" />
+    
+    <img id="dead1" src="img/explotions/explotion/1.png" />
+    <img id="dead2" src="img/explotions/explotion/2.png" />
+    <img id="dead3" src="img/explotions/explotion/3.png" />
+    <img id="dead4" src="img/explotions/explotion/4.png" />
+    <img id="dead5" src="img/explotions/explotion/5.png" />
+    
+    <img id="menu" src="img/TankGame.png" />
+	
+	<audio id="Hit" src="sound/Hit.wav"></audio>
+	<audio id="Key" src="sound/Key.wav"></audio>
+	<audio id="Mort" src="sound/Mort.wav"></audio>
+	<audio id="Shoot" src="sound/Shoot.wav"></audio>
+
+	
+    <div class="button" id="button.up">  UP </div>
+    <div class="button" id="button.down"> Down </div>
+    <div class="button" id="button.left"> Left </div>
+    <div class="button" id="button.right"> Right </div>
+    <div class="button" id="button.spacebar"> Action </div>
+    
+    
+    <!-- canvas -->
+    <center>
+      <canvas id="canvas" width="640" height="480">
+      </canvas>
+    </center>
+  </body>
+</html>
+
+<script async type="application/dart" src="game1.dart"></script>
+<script async src="packages/browser/dart.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,6 @@
+name: TankGame
+author: Maxime Wuyts
+description: A sample application
+homepage: http://www.raptogame.com
+dependencies:
+  browser: any
